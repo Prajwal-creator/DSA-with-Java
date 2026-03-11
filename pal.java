@@ -6,6 +6,7 @@ public class pal {
         while(a<b){
             if(num[a]!=num[b]){
                 pal=true;
+                break;
 
             }
             a++;
