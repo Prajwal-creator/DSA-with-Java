@@ -1,23 +1,26 @@
 public class prime {
     public static void main(String[] args){
-        int num=8;
-        boolean isprime=true;
-        if(num<2){
+        boolean isalpha=false;
+        int arr[]={0,1,2,3,4,5,6,7,8,9,10};
+        for(int j=0;j<arr.length;j++){
+            isalpha=false;
+            if(arr[j]<2){
             System.out.println("the number less than 1 please enter the greater than 2 number");
-            return;
         }else{
-            for(int i=2; i*i<=num; i++){
-            if(num%i==0){
-                isprime=false; 
-                break;   
+        for(int i=2; i*i<=arr[j]; i++){
+            if(arr[j]%i==0){
+               isalpha=true;
+               break;
+                    
             }
           } 
         }
-            
-        if(isprime){
-            System.out.println("the number is prime"+num);
+        if(isalpha){
+            System.out.println("the number is not prime"+arr[j]);
         }else{
-            System.out.println("the number is not prime"+num);
+            System.out.println("the number is prime"+arr[j]);
+        }
+
         }
 
     }
